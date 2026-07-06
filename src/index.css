@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFAF0;
+    color: #181C06;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+/* Custom Sleek Scrollbar utilizing palette colors */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(129, 145, 47, 0.05); /* very light Olive Green */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #81912F; /* Olive Green */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E03F4F; /* Red */
+}
+
+/* Leaflet Overrides to match our palette */
+.leaflet-container {
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFAF0 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: #FFFAF0 !important;
+  color: #181C06 !important;
+  border: 1px solid rgba(129, 145, 47, 0.3);
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(24, 28, 6, 0.15) !important;
+}
+
+.leaflet-popup-tip {
+  background-color: #FFFAF0 !important;
+  border: 1px solid rgba(129, 145, 47, 0.3);
+}
+
+.leaflet-bar {
+  border: 1px solid rgba(129, 145, 47, 0.3) !important;
+  box-shadow: none !important;
+}
+
+.leaflet-bar a {
+  background-color: #FFFAF0 !important;
+  color: #181C06 !important;
+  border-bottom: 1px solid rgba(129, 145, 47, 0.2) !important;
+}
+
+.leaflet-bar a:hover {
+  background-color: rgba(248, 196, 99, 0.2) !important; /* light Amber */
+  color: #E03F4F !important;
+}
+
+/* Customized micro-animations */
+@keyframes signalPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(224, 63, 79, 0.5);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(224, 63, 79, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(224, 63, 79, 0);
+  }
+}
+
+.pulse-red {
+  animation: signalPulse 2s infinite;
+}
+
+@keyframes progressPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.pulse-progress {
+  animation: progressPulse 1.5s infinite ease-in-out;
+}
+

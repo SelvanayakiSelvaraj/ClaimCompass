@@ -1,0 +1,6 @@
+{
+  "name": "ClaimCompass",
+  "description": "An autonomous AI-powered disaster aid navigation agent that matches survivors to relief programs, automates application submissions, and tracks status updates on an interactive geographic dashboard.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
