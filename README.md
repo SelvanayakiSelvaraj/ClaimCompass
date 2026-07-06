@@ -3,7 +3,6 @@
 ClaimCompass is a full-stack, responsive, and empathetic platform built to help disaster survivors navigate complex relief grants, track their application progress, maintain a secure document vault, and interact with an AI companion in their native language.
 
 ### 🌐 Live Application Links
-- **Production Preview & Share Link**: [ClaimCompass App](https://ais-pre-ormqbqnsnav7x6brq3stsw-56517989814.asia-southeast1.run.app)
 - **Active Development URL**: [ClaimCompass Dev Portal](https://ais-dev-ormqbqnsnav7x6brq3stsw-56517989814.asia-southeast1.run.app)
 
 The application leverages **React (TypeScript) + Vite** on the frontend, **Express** on the backend, and is integrated with **Google Gemini 3.5 Flash** to provide personalized, multilingual support.
